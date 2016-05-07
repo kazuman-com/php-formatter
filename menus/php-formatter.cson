@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle php-formatter'
+      'command': 'php-formatter:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'php-formatter'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'php-formatter:toggle'
+        }
+      ]
+    ]
+  }
+]
